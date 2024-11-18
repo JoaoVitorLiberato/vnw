@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.header nav ul {
+  color: blue;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header nav ul li {
+  margin: 5px 0;
+}
+
+.first-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 10px;
+}
