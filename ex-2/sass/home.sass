@@ -1,0 +1,288 @@
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px 10px
+
+  @media (max-width: 768px)
+    justify-content: center
+
+  h2
+    font-weight: 700
+    font-size: 40px
+    line-height: 59.28px
+
+    @media (max-width: 768px)
+      display: none
+
+  .header_nav
+    padding: 0 20px
+    display: flex
+
+    .header_nav--list
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 100px
+
+      @media (max-width: 768px)
+        flex-direction: column
+        margin-right: 0
+      
+      li
+        margin: 0 15px
+
+        a
+          font-weight: 500
+          font-size: 20px
+          color: var(--v-grey-primary-color)
+          transition: .4s ease-in all
+
+          &:hover
+            color: var(--v-blue-primary-color)
+            text-decoration: underline
+
+    button
+      border: 3px solid var(--v-secondary-color)
+      width: 156px
+      height: 70px
+      background-color: transparent
+      transition: .4s ease-in-out all
+
+      span
+        font-size: 24px
+        font-weight: 500
+
+      &:hover
+        border-color: var(--v-blue-primary-color)
+
+        span 
+          color: var(--v-blue-primary-color)
+
+      @media (max-width: 768px)
+        display: none
+
+.main
+  .main_hero
+    color: var(--v-primary-color)
+    height: 634px
+    padding: 5px 100px
+    background-image: url(../assets/img/hero-background.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center -15px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    @media (max-width: 768px)
+      align-items: center
+      padding: 20px
+      height: 239px
+
+    @media (min-width: 769px) and (max-width: 1024px)
+        align-items: center
+
+    .main_hero--title
+      font-size: 96px
+      font-weight: 700
+      line-height: 142.27px
+
+      @media (max-width: 768px)
+        font-size: 36px
+        height: 40px
+        transform: translateY(-58px)
+
+    .main_hero--description
+      font-weight: 300
+      font-size: 32px
+
+      @media (max-width: 768px)
+        font-size: 16px
+
+    .main_hero--button
+      width: 251px
+      height: 59px
+      margin-top: 30px
+      background-color: var(--v-blue-primary-color)
+      border: none
+      outline: none
+      transition: .8s ease-out all
+
+      span 
+        font-size: 24px
+        font-weight: 700
+        color: var(--v-primary-color)
+
+      &:hover
+        background-color: var(--v-grey-primary-color)
+
+      @media (max-width: 768px)
+        width: 156px
+        height: 51px
+        margin-top: 10px
+
+        span
+          font-size: 16px
+
+  .main_gestao
+    display: flex
+    justify-content: space-around
+    padding: 150px 50px
+    font-family: "Roboto", sans-serif
+
+    @media (max-width: 1024px)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 10px 20px
+
+    .main_gestao--description
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      height: 500px
+      max-width: 474px
+      margin-top: 80px
+
+      @media (max-width: 768px)
+        display: block
+        max-width: 313px
+        margin-top: 0
+        height: 380px
+
+      span
+        color: var(--v-blue-secondary-color)
+        font-size: 24px
+        font-weight: 500
+
+        @media (max-width: 768px)
+          font-size: 16px
+
+      h2
+        color: var(--v-secondary-color)
+        font-size: 36px
+        line-height: 42.19px
+        font-weight: 800
+        margin: 20px 0
+
+        @media (max-width: 768px)
+          font-size: 24px
+          line-height: 28.13px
+
+      p
+        font-size: 24px
+        font-weight: 400
+
+        @media (max-width: 768px)
+          font-size: 14px
+          line-height: 16.41px
+
+      button
+        width: 159px
+        height: 28px
+        margin-top: 50px
+        background-color: transparent
+        border: none
+        outline: none
+        transition: .3s ease-in
+
+        span
+          font-size: 24px
+          font-weight: 400
+
+        &:hover
+          text-decoration: underline
+          padding: 5px 0
+          span
+            color: var(--v-grey-primary-color)
+
+        @media (max-width: 768px)
+          margin-top: 20px
+          width: 106px
+
+          span
+            font-size: 16px
+    .main_gestao--image
+      @media (min-width: 769px) and (max-width: 1024px)
+        margin-top: 150px
+
+      img
+        width: 679px
+        height: 783px
+
+        @media (max-width: 768px)
+          width: 313px
+          height: 274px
+
+        @media (min-width: 769px) and (max-width: 1024px)
+          width: 474px
+          height: 420px
+
+  .main_services
+    background-color: var(--v-grey-secondary-color)
+    text-align: center
+    padding: 40px 20px
+
+    .main_services--text
+      color: var(--v-blue-secondary-color)
+      font-size: 24px
+      font-weight: 500
+
+    .main_services--title
+      color: var(--v-secondary-color)
+      font-size: 24px
+      font-weight: 500
+      margin-bottom: 80px
+
+      @media (max-width: 768px)
+        margin-bottom: 30px
+
+    .main_services_content
+      display: flex
+      justify-content: space-evenly
+      align-items: center
+
+      @media (max-width: 1024px)
+        flex-wrap: wrap
+
+      .main_services_content_card
+        max-width: 367px
+        height: 484px
+        text-align: start
+        background-color: var(--v-primary-color)
+
+        @media (max-width: 768px)
+          width: 300px
+          height: 380px
+          margin: 20px 5px
+
+        @media (min-width: 501px) and (max-width: 1024px)
+          width: 300px
+          margin: 20px 30px
+
+        .main_services_content_card--image
+          width: 100%
+          height: 259px
+
+          @media (max-width: 768px)
+            height: 210px
+
+        .main_services_content_card--info
+          padding: 20px
+
+          h4
+            font-size: 24px
+            font-weight: 500
+            margin-bottom: 10px
+
+            @media (max-width: 768px)
+              font-size: 14px
+
+          span
+            font-size: 24px
+            font-weight: 200
+
+            @media (max-width: 768px)
+              font-size: 13px
